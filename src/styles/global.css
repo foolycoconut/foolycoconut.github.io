@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -13,29 +13,16 @@ html {
 }
 
 body {
-  @apply bg-[#f8f6f1] text-ink font-sans antialiased;
+  @apply bg-[#fbfaf7] text-ink font-sans antialiased;
 }
 
 .page-shell {
-  @apply mx-auto flex min-h-screen max-w-5xl flex-col px-6 pb-20 pt-8 md:px-10;
-}
-
-.surface {
-  @apply rounded-[1.5rem] border bg-white;
-  border-color: rgb(0 0 0 / 6%);
+  @apply mx-auto flex min-h-screen max-w-4xl flex-col px-6 pb-24 pt-8 md:px-10;
 }
 
 .eyebrow {
-  @apply font-mono text-xs uppercase tracking-[0.28em] text-moss;
-}
-
-.section-grid {
-  @apply grid gap-6 md:grid-cols-[minmax(0,220px)_1fr];
-}
-
-.section-copy {
-  @apply text-sm leading-7;
-  color: rgb(17 24 39 / 72%);
+  @apply font-mono text-[11px] uppercase tracking-[0.28em];
+  color: rgb(69 88 77 / 84%);
 }
 
 a {
@@ -43,59 +30,83 @@ a {
 }
 
 .site-header {
-  @apply mb-16 flex flex-col gap-5 border-b pb-5 md:mb-20 md:flex-row md:items-center md:justify-between;
-  border-color: rgb(0 0 0 / 8%);
+  @apply mb-16 flex flex-col gap-4 border-b pb-4 md:mb-20 md:flex-row md:items-end md:justify-between;
+  border-color: rgb(17 24 39 / 12%);
 }
 
 .site-nav {
-  @apply flex flex-wrap items-center gap-3 text-sm;
-  color: rgb(17 24 39 / 65%);
+  @apply flex flex-wrap items-center gap-1 text-sm;
+  color: rgb(17 24 39 / 62%);
 }
 
 .site-nav a {
-  @apply rounded-full px-3 py-1.5 hover:bg-black/[0.04] hover:text-ink;
+  @apply px-3 py-1 hover:text-ink;
 }
 
 .site-nav a[data-active="true"] {
-  @apply bg-black/[0.06] text-ink;
+  @apply text-ink;
 }
 
 .page-intro {
-  @apply max-w-3xl space-y-6;
+  @apply max-w-3xl space-y-5;
 }
 
 .page-title {
-  @apply text-4xl font-semibold tracking-tight md:text-6xl;
+  @apply text-4xl font-semibold tracking-tight md:text-5xl;
 }
 
 .page-body {
-  @apply max-w-3xl text-base leading-8 md:text-lg;
-  color: rgb(17 24 39 / 74%);
+  @apply max-w-3xl text-[18px] leading-8 md:text-[19px];
+  color: rgb(17 24 39 / 78%);
 }
 
 .simple-grid {
-  @apply grid gap-5 md:grid-cols-2;
+  @apply grid gap-10 border-t pt-8 md:grid-cols-[1fr_1fr];
+  border-color: rgb(17 24 39 / 10%);
 }
 
 .card {
-  @apply rounded-[1.25rem] border bg-white p-6;
-  border-color: rgb(0 0 0 / 8%);
+  @apply space-y-4;
 }
 
 .card-title {
-  @apply text-lg font-semibold tracking-tight;
+  @apply text-2xl font-semibold tracking-tight;
 }
 
 .prose-list {
-  @apply space-y-2 text-sm leading-7;
-  color: rgb(17 24 39 / 74%);
+  @apply space-y-2 text-base leading-8;
+  color: rgb(17 24 39 / 76%);
 }
 
 .muted-link {
-  @apply text-moss hover:text-ink;
+  color: rgb(69 88 77 / 92%);
+}
+
+.muted-link:hover {
+  color: rgb(17 24 39 / 100%);
 }
 
 .footer-note {
-  @apply mt-auto pt-16 text-sm;
-  color: rgb(17 24 39 / 45%);
+  @apply mt-auto border-t pt-6 text-sm;
+  border-color: rgb(17 24 39 / 10%);
+  color: rgb(17 24 39 / 42%);
+}
+
+.body-copy {
+  @apply text-[17px] leading-8;
+  color: rgb(17 24 39 / 76%);
+}
+
+.subtle-list {
+  @apply space-y-3 text-[17px] leading-8;
+  color: rgb(17 24 39 / 76%);
+}
+
+.subtle-list li {
+  @apply list-none;
+}
+
+.academic-block {
+  @apply max-w-3xl border-t pt-8;
+  border-color: rgb(17 24 39 / 10%);
 }

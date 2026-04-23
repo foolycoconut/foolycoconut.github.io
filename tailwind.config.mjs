@@ -11,7 +11,7 @@ export default {
         sun: "#f7c873"
       },
       fontFamily: {
-        sans: ["'IBM Plex Sans'", "system-ui", "sans-serif"],
+        sans: ["'Source Serif 4'", "Georgia", "serif"],
         mono: ["'IBM Plex Mono'", "ui-monospace", "monospace"]
       },
       boxShadow: {
